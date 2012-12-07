@@ -40,12 +40,18 @@ gem 'jquery-rails'
 gem 'execjs'
 gem 'therubyracer'
 
+# gem 'nokogiri'
+
 group :test, :development do 
   gem 'rspec-rails'
+  gem 'minitest'
 end
 
 group :test do
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', '1.0.6'
   gem 'capybara'
   gem 'database_cleaner'
+
+  # added by me
+  gem 'turn'
 end

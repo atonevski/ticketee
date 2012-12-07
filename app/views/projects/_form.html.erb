@@ -1,0 +1,7 @@
+<%= form_for(@project) do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name, :placeholder => 'Just a place holder' %>
+  </p>
+  <%= f.submit %>
+<% end %>
