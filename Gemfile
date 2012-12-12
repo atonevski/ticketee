@@ -60,6 +60,8 @@ group :test do
   # added by me
   gem 'turn'
   gem 'factory_girl_rails'
+
+  gem 'devise', '~> 1.4.3'
 end
 
 
