@@ -62,6 +62,7 @@ group :test do
   gem 'factory_girl_rails'
 
   gem 'devise', '~> 1.4.3'
+  gem 'email_spec'
 end
 
 
