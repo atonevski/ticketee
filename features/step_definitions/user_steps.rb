@@ -3,7 +3,10 @@ Given /^there are the following users:$/ do |table|
   # table is a Cucumber::Ast::Table
   table.hashes.each do |attributes|
     unconfirmed = attributes.delete("unconfirmed") == 'true'
+    is_admin    = attributes.delete('admin')
     @user = User.create!(attributes)
+    @user.admin = is_admin
+    # @user.update_attribute('admin', attribites['admin'] == 'true')
     @user.confirm! unless unconfirmed
   end
 end
